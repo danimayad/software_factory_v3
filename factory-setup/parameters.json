@@ -1,0 +1,13 @@
+{
+  "project": "",
+  "test_paths": ["tests"],
+  "defaults": {
+    "writer": {"model": "", "effort": ""},
+    "review": {"reviewers": [], "max_rounds": null},
+    "helpers": [],
+    "protected_paths": [],
+    "caps": {"max_turns": null, "max_spend_usd": null},
+    "settings": {}
+  },
+  "milestones": {}
+}

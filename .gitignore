@@ -1,0 +1,18 @@
+# Secrets: never committed
+.env
+.env.*
+!.env.example
+
+# Helpers' own copies of the repository (Claude Code worktrees)
+.claude/worktrees/
+
+# Local, personal settings
+.claude/settings.local.json
+
+# Python and system files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Working files of the factory hooks
+.factory/

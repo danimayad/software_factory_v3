@@ -1,0 +1,22 @@
+# Continuous integration: runs the quality gates on GitHub at every change.
+# Skeleton. The foundation milestone copies this file to .github/workflows/ci.yml and
+# adds the setup steps of the chosen stack (install the language, install packages).
+# It is kept here, inactive, so that a new project does not fail on GitHub before its
+# quality gates exist.
+name: Quality gates
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      # Add here the setup steps of the stack.
+
+      - name: Run the quality gates
+        run: bash scripts/check.sh
